@@ -77,3 +77,48 @@ Portal definitivo para Construcciones Escolares
 Tutoriales
 
 [Coders Page - API with Svelte](https://www.youtube.com/playlist?list=PLh7PNLbTepP94NqlzNvEQGUlxu8dZXN8U)
+
+Table usuarios
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `UserID` int NOT NULL,
+  `UserUsuario` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `clave` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `UserClave` varchar(500) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `UserTipo` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1:Admin',
+  `UserNombre` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `UserApellido` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci DEFAULT NULL,
+  `UserFechaAlta` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `UserIP` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `UserUltimoAcceso` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `UserNotas` text CHARACTER SET utf8 COLLATE utf8_spanish_ci,
+  `UserAvatar` varchar(150) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL DEFAULT 'usuario-avatar.jpg',
+  `UserActivo` tinyint(1) DEFAULT '1'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`UserID`),
+  ADD UNIQUE KEY `UserID` (`UserID`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `UserID` int NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+GitHub (https://github.com/JRHuasi/base-svelte-tailwind-user-login.git)
