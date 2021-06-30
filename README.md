@@ -74,3 +74,6 @@ File on Github! See https://github.com/sveltech/routify/issues .
 
 Portal definitivo para Construcciones Escolares
 
+Tutoriales
+
+[Coders Page - API with Svelte](https://www.youtube.com/playlist?list=PLh7PNLbTepP94NqlzNvEQGUlxu8dZXN8U)

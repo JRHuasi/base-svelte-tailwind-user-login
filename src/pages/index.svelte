@@ -11,5 +11,15 @@
 
 </script>
 
-<h1>HOME</h1>
+<h1 class="text-loco font-bold font-rale">HOME</h1>
 {$user.UserNombre}
+<div class="btn btn-blu">Botón</div>
+
+<div class="flex flex-wrap-reverse stretch text-center">
+  <div class="bg-blue-300 p-4 m-2">1</div>
+  <div class="bg-blue-300 p-4 m-2">2</div>
+  <div class="bg-blue-300 p-4 m-2">3</div>
+  <div class="bg-blue-300 p-4 m-2">4</div>
+  <div class="bg-blue-300 p-4 m-2">5</div>
+  <div class="bg-blue-300 p-4 m-2">6<br>6<br>6<br>6<br>6<br></div>
+</div>
